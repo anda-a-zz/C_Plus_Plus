@@ -1,0 +1,1210 @@
+Last login: Thu Jan 16 17:28:14 on ttys001
+Andas-MacBook-Pro:~ andaachimescu$ cd Desktop
+Andas-MacBook-Pro:Desktop andaachimescu$ cd Programming
+Andas-MacBook-Pro:Programming andaachimescu$ cd bitmap project
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ 
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ andaachimescu⁩
+-bash: andaachimescu⁩: command not found
+Andas-MacBook-Pro:bitmap andaachimescu$ ln andaachimescu⁩
+ln: andaachimescu⁩: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln /andaachimescu⁩
+ln: /andaachimescu⁩: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /Macintosh HD⁩ ▸ ⁨Applications⁩ ▸ ⁨Xcode.app⁩ ▸ ⁨Contents⁩ ▸ ⁨Developer⁩ ▸ ⁨Platforms⁩ ▸ ⁨MacOSX.platform⁩ ▸ ⁨Developer⁩ ▸ ⁨SDKs⁩ ▸ ⁨MacOSX.sdk⁩ ▸ ⁨System⁩ ▸ ⁨Library⁩ ▸ ⁨Frameworks⁩ ▸ ⁨Tk.framework⁩ ▸ ⁨Versions⁩ ▸ ⁨8.5⁩ ▸ ⁨Headers⁩
+ln: ⁨Headers⁩: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /local/include/X11
+ln: /local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /andaachimescu/local/include/X11
+ln: /andaachimescu/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ ln -s /opt/X11/include/X11 /usr/local/include/X11
+ln: /usr/local/include/X11: No such file or directory
+Andas-MacBook-Pro:bitmap andaachimescu$ export CPPFLAGS=-I/opt/X11/include
+Andas-MacBook-Pro:bitmap andaachimescu$ bitmap_project.cpp
+-bash: bitmap_project.cpp: command not found
+Andas-MacBook-Pro:bitmap andaachimescu$ g++ bitmap_project.cpp
+clang: error: no such file or directory: 'bitmap_project.cpp'
+clang: error: no input files
+Andas-MacBook-Pro:bitmap andaachimescu$ ls
+bitmap			bitmap.xcodeproj
+Andas-MacBook-Pro:bitmap andaachimescu$ cd bitmap
+Andas-MacBook-Pro:bitmap andaachimescu$ ls
+CImg.h			bitmap_variables.hpp	main.cpp
+Andas-MacBook-Pro:bitmap andaachimescu$ cd ../
+Andas-MacBook-Pro:bitmap andaachimescu$ cd ../
+Andas-MacBook-Pro:Programming andaachimescu$ ls
+ECE 150			ICS Projects		bitmap project
+ECE108			Icon?			leapYear.cpp
+Gr 12 ICS Programs	bitmap			leapYearTutorial
+Andas-MacBook-Pro:Programming andaachimescu$ cd bitmap project
+Andas-MacBook-Pro:bitmap andaachimescu$ ls
+bitmap			bitmap.xcodeproj
+Andas-MacBook-Pro:bitmap andaachimescu$ cd ../
+Andas-MacBook-Pro:Programming andaachimescu$ ls
+ECE 150			ICS Projects		bitmap_project
+ECE108			Icon?			leapYear.cpp
+Gr 12 ICS Programs	bitmap			leapYearTutorial
+Andas-MacBook-Pro:Programming andaachimescu$ cd bitmap_project
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp
+In file included from bitmap_project.cpp:14:
+./CImg.h:249:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:192:1: warning: control may reach end of non-void function
+      [-Wreturn-type]
+}
+^
+bitmap_project.cpp:224:1: warning: control may reach end of non-void function
+      [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-549f90.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-549f90.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-549f90.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-549f90.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-549f90.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-549f90.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-549f90.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-549f90.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-549f90.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-549f90.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-549f90.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-549f90.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-549f90.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-549f90.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-549f90.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-549f90.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-549f90.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-549f90.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-549f90.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-549f90.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp bitmap_variables.h  -I/opt/X11/include
+clang: warning: treating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+bitmap_project.cpp:192:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:224:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-c5a6a2.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-c5a6a2.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-c5a6a2.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-c5a6a2.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-c5a6a2.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-c5a6a2.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-c5a6a2.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-c5a6a2.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-c5a6a2.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-c5a6a2.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-c5a6a2.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-c5a6a2.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-c5a6a2.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-c5a6a2.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-c5a6a2.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-c5a6a2.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-c5a6a2.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-c5a6a2.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-c5a6a2.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-c5a6a2.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ export CPPFLAGS=-I/opt/X11/include
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp bitmap_variables.h  -I/opt/X11/include
+clang: warning: treating 'c-header' input as 'c++-header' when in C++ mode, this behavior is deprecated [-Wdeprecated]
+bitmap_project.cpp:192:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:224:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-301788.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-301788.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-301788.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-301788.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-301788.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-301788.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-301788.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-301788.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-301788.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-301788.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-301788.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-301788.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-301788.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-301788.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-301788.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-301788.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-301788.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-301788.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-301788.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-301788.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ export CPPFLAGS=-I/opt/X11/include
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp 
+In file included from bitmap_project.cpp:14:
+./CImg.h:249:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:192:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:224:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-bdae3e.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-bdae3e.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-bdae3e.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-bdae3e.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-bdae3e.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-bdae3e.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-bdae3e.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-bdae3e.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-bdae3e.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-bdae3e.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-bdae3e.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-bdae3e.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-bdae3e.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-bdae3e.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-bdae3e.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-bdae3e.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-bdae3e.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-bdae3e.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-bdae3e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-bdae3e.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ export CPPFLAGS=-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp 
+In file included from bitmap_project.cpp:14:
+./CImg.h:249:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Tk.framework/Versions/8.5/Headers
+\In file included from bitmap_project.cpp:14:
+./CImg.h:249:10: fatal error: 'X11/Xlib.h' file not found
+#include <X11/Xlib.h>
+         ^~~~~~~~~~~~
+1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:192:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:224:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-891be1.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-891be1.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-891be1.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-891be1.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-891be1.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-891be1.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-891be1.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-891be1.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-891be1.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-891be1.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-891be1.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-891be1.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-891be1.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-891be1.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-891be1.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-891be1.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-891be1.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-891be1.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-891be1.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-891be1.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:190:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:222:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-afc542.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-afc542.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-afc542.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-afc542.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-afc542.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-afc542.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-afc542.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-afc542.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-afc542.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-afc542.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-afc542.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-afc542.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-afc542.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-afc542.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-afc542.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-afc542.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-afc542.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-afc542.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-afc542.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-afc542.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:191:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:223:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-321b05.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-321b05.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-321b05.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-321b05.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-321b05.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-321b05.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-321b05.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-321b05.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-321b05.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-321b05.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-321b05.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-321b05.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-321b05.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-321b05.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-321b05.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-321b05.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-321b05.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-321b05.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-321b05.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-321b05.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:191:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:223:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+2 warnings generated.
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-9e413e.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-9e413e.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-9e413e.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-9e413e.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-9e413e.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-9e413e.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-9e413e.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-9e413e.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-9e413e.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-9e413e.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-9e413e.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-9e413e.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-9e413e.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-9e413e.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-9e413e.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-9e413e.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-9e413e.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-9e413e.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-9e413e.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-9e413e.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:184:13: error: expected ')'
+            numeric = false;
+            ^
+bitmap_project.cpp:183:12: note: to match this '('
+        if (!isdigit(numberStr[u])
+           ^
+bitmap_project.cpp:215:26: error: expected ';' after expression
+    else (answer == "no")
+                         ^
+                         ;
+bitmap_project.cpp:215:18: warning: expression result unused [-Wunused-value]
+    else (answer == "no")
+          ~~~~~~~^~~~~~~
+1 warning and 2 errors generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:188:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+bitmap_project.cpp:215:26: error: expected ';' after expression
+    else (answer == "no")
+                         ^
+                         ;
+bitmap_project.cpp:215:18: warning: expression result unused [-Wunused-value]
+    else (answer == "no")
+          ~~~~~~~^~~~~~~
+2 warnings and 1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+bitmap_project.cpp:217:26: error: expected ';' after expression
+    else (answer == "no")
+                         ^
+                         ;
+bitmap_project.cpp:217:18: warning: expression result unused [-Wunused-value]
+    else (answer == "no")
+          ~~~~~~~^~~~~~~
+1 warning and 1 error generated.
+Andas-MacBook-Pro:bitmap_project andaachimescu$ g++ bitmap_project.cpp -I/opt/X11/include
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-1e50e6.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-1e50e6.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-1e50e6.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-1e50e6.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-1e50e6.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-1e50e6.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-1e50e6.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-1e50e6.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-1e50e6.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-1e50e6.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-1e50e6.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-1e50e6.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-1e50e6.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-1e50e6.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-1e50e6.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-1e50e6.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-1e50e6.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-1e50e6.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-1e50e6.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-1e50e6.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ clang++ bitmap_project.cpp -I/opt/X11/include
+Undefined symbols for architecture x86_64:
+  "_XAllocClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XCheckMaskEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-b25823.o
+  "_XCheckTypedEvent", referenced from:
+      cimg_library::CImgDisplay::_events_thread(void*) in bitmap_project-b25823.o
+  "_XCheckWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XCloseDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-b25823.o
+  "_XCreateColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XCreateImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+      void cimg_library::CImgDisplay::_resize<unsigned char>(unsigned char, unsigned int, unsigned int, bool) in bitmap_project-b25823.o
+      void cimg_library::CImgDisplay::_resize<unsigned short>(unsigned short, unsigned int, unsigned int, bool) in bitmap_project-b25823.o
+      void cimg_library::CImgDisplay::_resize<unsigned int>(unsigned int, unsigned int, unsigned int, bool) in bitmap_project-b25823.o
+  "_XCreateSimpleWindow", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XCreateWindow", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XDestroyWindow", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-b25823.o
+  "_XFree", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XFreeColormap", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-b25823.o
+  "_XGetVisualInfo", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XGetWindowAttributes", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-b25823.o
+  "_XGrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XInternAtom", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XLookupString", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XMapRaised", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-b25823.o
+  "_XMoveWindow", referenced from:
+      cimg_library::CImgDisplay::move(int, int) in bitmap_project-b25823.o
+  "_XOpenDisplay", referenced from:
+      cimg_library::CImgDisplay::screen_width() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::screen_height() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XPutImage", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-b25823.o
+  "_XQueryKeymap", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XResizeWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::resize(int, int, bool) in bitmap_project-b25823.o
+  "_XSelectInput", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XSendEvent", referenced from:
+      cimg_library::CImgDisplay::_paint(bool) in bitmap_project-b25823.o
+  "_XSetClassHint", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XSetInputFocus", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XSetWMProtocols", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XSetWindowColormap", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XStoreColors", referenced from:
+      cimg_library::CImgDisplay::_set_colormap(unsigned long&, unsigned int) in bitmap_project-b25823.o
+  "_XStoreName", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XSync", referenced from:
+      cimg_library::CImgDisplay::assign() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XUngrabKeyboard", referenced from:
+      cimg_library::CImgDisplay::_desinit_fullscreen() in bitmap_project-b25823.o
+  "_XUnmapWindow", referenced from:
+      cimg_library::CImgDisplay::_handle_events(_XEvent const*) in bitmap_project-b25823.o
+  "_XVisualIDFromVisual", referenced from:
+      cimg_library::CImgDisplay::_assign(unsigned int, unsigned int, char const*, unsigned int, bool, bool) in bitmap_project-b25823.o
+  "_XWindowEvent", referenced from:
+      cimg_library::CImgDisplay::_init_fullscreen() in bitmap_project-b25823.o
+      cimg_library::CImgDisplay::_map_window() in bitmap_project-b25823.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+Andas-MacBook-Pro:bitmap_project andaachimescu$ clang++ -I .. -I /opt/X11/include bitmap_project.cpp -L /opt/X11/lib -lX11 -o bitmap
+Andas-MacBook-Pro:bitmap_project andaachimescu$ ./bitmap.o
+-bash: ./bitmap.o: No such file or directory
+Andas-MacBook-Pro:bitmap_project andaachimescu$ ./bitmap
+Andas-MacBook-Pro:bitmap_project andaachimescu$ clang++ -I .. -I /opt/X11/include bitmap_project.cpp -L /opt/X11/lib -lX11 -o bitmap
+Andas-MacBook-Pro:bitmap_project andaachimescu$ ./bitmap
+For a bitmap image,
+Enter input filename: picture.bmp
+
+File Header
+ID        : 19778
+File Size : 786486 byte(s)
+Reserved  : 0
+Offset    : 54 byte(s)
+
+Info File Header
+Header Size      : 40 byte(s)
+Width            : 512 pixel(s)
+Height           : 512 pixel(s)
+Planes           : 1
+Bits Per Pixel   : 24
+Compression      : 0
+Data Size        : 786432 byte(s)
+H Resolution     : 3790
+V Resolution     : 3800
+Used Colors      : 0
+Important Colors : 0
+
+You can find your pixel array of your image in Colours.txt
+
+Would you like to do any effects on your image?
+Yes or no?
+yes 
+
+Yay! Please choose which effect you would like to use on your image.
+1. Resize my photo
+2. Make my photo black and white
+3. Make my picture blurry
+4. Sharpen my image
+5. Nevermind, I don't want an effect
+1
+
+Please enter what size you want your image to be.
+Width: 300 
+Please enter a positive number
+Width: -0
+Please enter a positive number
+Width: 30
+Please enter a positive number
+Width: -30
+Please enter a positive number
+Width: 40 
+Please enter a positive number
+Width: 500
+Please enter a positive number
+Width: -40
+Please enter a positive number
+Width: 0
+Please enter a positive number
+Width: 1
+Please enter a positive number
+Width: 2342
+Please enter a positive number
+Width: -45243
+Please enter a positive number
+Width: .3
+Please enter a positive number
+Width: 324.2
+Please enter a positive number
+Width: ``
+Please enter a positive number
+Width: 
